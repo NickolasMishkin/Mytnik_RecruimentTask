@@ -1,5 +1,2 @@
-﻿  pch.cpp
-  widget.cpp
-  window.cpp
-  Создание кода...
+﻿  PlayerHUD.cpp
   framework.vcxproj -> W:\Junior_UI_Programmer_Recruitment_Task\Code\bin\x64.\framework.lib

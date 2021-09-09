@@ -4,6 +4,8 @@ using RenderContext = sf::RenderWindow;
 using InputEvent = sf::Event;
 using Color = sf::Color;
 using Vector2f = sf::Vector2f;
+using Texture = sf::Texture;
+using Text = sf::Text;
 
 namespace Json = rapidjson;
 
