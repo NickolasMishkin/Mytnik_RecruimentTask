@@ -16,11 +16,11 @@ ui::ProgressBar::ProgressBar(Vector2f InitPosition, Vector2f InitSize)
 
 void ui::ProgressBar::Update(float CurrentValue)
 {
-	Vector2f step = { Box.getSize().x / (max - min) * (max - min - CurrentValue), Box.getSize().y };
+	Step = { Box.getSize().x / (max - min) * (max - min - CurrentValue), Box.getSize().y };
 	
 	if (CurrentValue >= min && CurrentValue <= max)
 	{
-		Box.setSize(step);
+		Box.setSize(Step);
 	}
 }
 
@@ -28,12 +28,13 @@ void ui::ProgressBar::Initialize()
 {
 	BGImage.loadFromFile("Assets/Images/ProgressBar.png");
 	BGTexture.loadFromImage(BGImage);
-	Box.setSize(static_cast<Vector2f>(BGImage.getSize()));
+	Step = static_cast<Vector2f>(BGImage.getSize());
+	Box.setSize(Step);
 	ProgressBg.setTexture(BGTexture);
 	ProgressBg.setColor(Color::Red);
 	Box.setPosition({ PositionOnViewport.x + ProgressBg.getLocalBounds().width,PositionOnViewport.y + ProgressBg.getLocalBounds().height });
 	ProgressBg.setPosition(PositionOnViewport);
-	Box.setFillColor(Color::Green);
+	Box.setFillColor(Color::Black);
 	Box.setRotation(180);
 }
 

@@ -95,7 +95,6 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="PlayerHUD.cpp" />
     <ClCompile Include="ProgressBar.cpp" />
     <ClCompile Include="TextBox.cpp" />
     <ClCompile Include="widget.cpp" />
@@ -104,10 +103,8 @@
   <ItemGroup>
     <ClInclude Include="AssetManager.h" />
     <ClInclude Include="Button.h" />
-    <ClInclude Include="HUDDataProvider.h" />
     <ClInclude Include="InterfaceButton.h" />
     <ClInclude Include="pch.h" />
-    <ClInclude Include="PlayerHUD.h" />
     <ClInclude Include="ProgressBar.h" />
     <ClInclude Include="QuickSlotInterface.h" />
     <ClInclude Include="TextBox.h" />

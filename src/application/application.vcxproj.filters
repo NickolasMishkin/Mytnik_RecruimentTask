@@ -4,9 +4,11 @@
     <ClCompile Include="application.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="pch.cpp" />
+    <ClCompile Include="..\framework\PlayerHUD.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="application.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="..\framework\PlayerHUD.h" />
   </ItemGroup>
 </Project>

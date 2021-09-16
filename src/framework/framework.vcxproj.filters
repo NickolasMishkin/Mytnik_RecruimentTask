@@ -7,7 +7,6 @@
     <ClCompile Include="Button.cpp" />
     <ClCompile Include="TextBox.cpp" />
     <ClCompile Include="ProgressBar.cpp" />
-    <ClCompile Include="PlayerHUD.cpp" />
     <ClCompile Include="AssetManager.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -17,10 +16,8 @@
     <ClInclude Include="Button.h" />
     <ClInclude Include="TextBox.h" />
     <ClInclude Include="ProgressBar.h" />
-    <ClInclude Include="PlayerHUD.h" />
     <ClInclude Include="InterfaceButton.h" />
     <ClInclude Include="AssetManager.h" />
-    <ClInclude Include="HUDDataProvider.h" />
     <ClInclude Include="QuickSlotInterface.h" />
   </ItemGroup>
 </Project>

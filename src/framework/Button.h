@@ -1,16 +1,18 @@
 #pragma once
 
-#include "TextBox.h"
 #include "pch.h"
 #include "InterfaceButton.h"
 #include "QuickSlotInterface.h"
-#include <iostream>
+#include "TextBox.h"
 #include "widget.h"
 
 
 
 namespace ui
 {
+	class IButton;
+	class IQuickSlot;
+
 	namespace state
 	{
 		enum

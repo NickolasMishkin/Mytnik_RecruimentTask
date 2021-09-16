@@ -4,8 +4,8 @@
 #include "widget.h"
 #include "Button.h"
 #include "ProgressBar.h"
-#include "HUDDataProvider.h"
 #include "InterfaceButton.h"
+#include <iostream>
 
 namespace ui
 {
@@ -20,15 +20,16 @@ namespace ui
 		virtual void Draw(RenderContext& Owner) const override;
 
 		virtual void OnPressed() override;
+
 		void Update(InputEvent& m_event);
 
 	private:
 
+		void Initialize();
+
 		Button QuickSlot1;
 		Button QuickSlot2;
 		Button QuickSlot3;
-
-		HUDDataProvider* DataProvider; 
 
 		ProgressBar HealthBarCharacter;
 		ProgressBar HealthBarBoss;

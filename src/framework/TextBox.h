@@ -16,6 +16,8 @@ namespace ui
 	{
 	public:
 
+		virtual ~TextBox() = default;
+
 		TextBox(std::string InitContentText, sf::Vector2i Size, sf::Vector2i Position);
 
 		void SetStyle(TextSyle &NewTextStyle);
@@ -34,7 +36,7 @@ namespace ui
 
 		void Initialize();
 
-		void LoadFont();
+		void LoadDefaultFont();
 
 		sf::Font GeneralFont;
 		std::string ContentText;

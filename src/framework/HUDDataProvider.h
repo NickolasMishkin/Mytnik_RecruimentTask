@@ -1,13 +1,16 @@
 #pragma once
 
-class HUDDataProvider
+namespace ui
 {
-public:
+	class HUDDataProvider : public ui::IButton
+	{
+	public:
 
-	HUDDataProvider() = default;
-	virtual ~HUDDataProvider() {};
+		HUDDataProvider() = default;
+		virtual ~HUDDataProvider() {};
 
-	void virtual OnHeroHealthChange(float CurrentHP) = 0;
-	void virtual OnBossHealthChange(float CurrentHP) = 0;
-	void virtual OnButtonChange() = 0;
-};
+		void virtual OnHeroHealthChange(float CurrentHP) = 0;
+		void virtual OnBossHealthChange(float CurrentHP) = 0;
+		void virtual OnClicked() = 0;
+	};
+}

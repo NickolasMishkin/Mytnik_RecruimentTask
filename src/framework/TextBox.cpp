@@ -12,7 +12,7 @@ namespace ui
 
 	void TextBox::Initialize()
 	{
-		LoadFont();
+		LoadDefaultFont();
 		DefaultTextStyle = { GeneralFont, Color::Black, 20 };
 		SetStyle(DefaultTextStyle);
 		TxtBox.setString(ContentText);
@@ -35,7 +35,7 @@ namespace ui
 		return InputEventState();
 	}
 
-	void TextBox::LoadFont()
+	void TextBox::LoadDefaultFont()
 	{
 		GeneralFont.loadFromFile("Assets/Font/General_font.ttf");
 	}

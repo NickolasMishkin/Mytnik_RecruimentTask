@@ -8,14 +8,12 @@ Application::~Application() = default;
 
 void Application::Initialize()
 {
-	
 	m_renderContext = std::make_unique<RenderContext>( sf::VideoMode( 1920, 1080 ), "Recruitment task" );
 
 	SetDataPath( "../../data/" );
 
 	if( m_mainWindow = std::make_unique<ui::Window>() )
 	{
-		
 		// here you can create your layout
 	}
 }
@@ -23,6 +21,7 @@ void Application::Initialize()
 void Application::Run()
 {
 	ui::PlayerHUD PlayerHUD(0, 0, 1920, 1080, *m_renderContext);
+
 	while (m_renderContext->isOpen())
 	{
 		InputEvent event;
@@ -36,6 +35,7 @@ void Application::Run()
 			{
 				m_mainWindow->ProcessInput(event);
 			}
+			PlayerHUD.Update(event);
 		}
 
 		m_renderContext->clear();
@@ -43,7 +43,6 @@ void Application::Run()
 			m_mainWindow->Draw(*m_renderContext);
 		}
 		
-		PlayerHUD.Update(event);
 		PlayerHUD.Draw(*m_renderContext);
 
 		m_renderContext->display();

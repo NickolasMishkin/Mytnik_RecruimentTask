@@ -9,6 +9,8 @@ namespace ui
 	{
 	public:
 
+		virtual ~ProgressBar() = default;
+
 		virtual InputEventState ProcessInput(const InputEvent& event) override;
 
 		ProgressBar(Vector2f InitPosition, Vector2f InitSize);
@@ -26,19 +28,19 @@ namespace ui
 
 		void Initialize();
 
+	private:
+
 		float min = 0.f;
 		float max = 1.f;
 
+		sf::Image BGImage;
+		Texture BGTexture;
 		sf::Sprite ProgressBg;
+		sf::RectangleShape Box;
 
 		Vector2f PositionOnViewport;
-
 		Vector2f Size;
+		Vector2f Step;
 
-		sf::Image BGImage;
-
-		Texture BGTexture;
-
-		sf::RectangleShape Box;
 	};
 }

@@ -89,6 +89,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\framework\PlayerHUD.cpp" />
     <ClCompile Include="application.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="pch.cpp">
@@ -99,6 +100,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\framework\PlayerHUD.h" />
     <ClInclude Include="application.h" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
